@@ -1,0 +1,17 @@
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore compiled files
+*.o
+*.out
+*.exe
+
+# Ignore temporary files
+*~
+*.swp
+*.tmp
+
+# Ignore SQLite database files
+*.db
