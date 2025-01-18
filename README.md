@@ -31,20 +31,33 @@ This is a simple bank system implemented in C++ using SQLite for database manage
 
 3. Build the project: Create a CMakeLists.txt file if you don't have one, and use CMake to build the project:
 
+```
 cmake_minimum_required(VERSION 3.10)
 
-- Set the project name
+# Set the project name
 project(bank_system)
 
-- Set the C++ standard
+# Set the C++ standard
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-- Find SQLite3 package
+# Find SQLite3 package
 find_package(SQLite3 REQUIRED)
 
-- Add the executable
+# Add the executable
 add_executable(bank_system main.cpp)
 
-- Link SQLite3 library
-target_link_libraries(bank_system SQLite::SQLite3)
+# Link SQLite3 library
+target_link_libraries(bank_system SQLite::SQLite3)```
+
+4. Then, run the following commands to build the project:
+
+```
+mkdir build
+cd build
+cmake ..
+make```
+
+5. Run the project:
+```
+./bank_system```
